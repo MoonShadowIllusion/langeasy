@@ -16,11 +16,11 @@ data class Reward(
 
 data class RewardData(
     val server_time: String,
-    val total: Int,
-    val continuous_days: Int,
+    val total: UInt,
+    val continuous_days: UInt,
     val v3_si_achievement: Int,
     val user_message: String,
     val v3_si_t1: String,
-    val coin: Int,
+    val coin: UInt,
     val v3_si_t2: String
 )

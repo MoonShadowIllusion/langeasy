@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Main-Class: langEasyLexis.UserKt
+Class-Path: okhttp-4.10.0.jar okio-jvm-3.0.0.jar kotlin-reflect-1.7.10.j
+ ar kotlin-stdlib-1.7.10.jar kotlin-stdlib-common-1.7.10.jar annotations
+ -13.0.jar kotlin-stdlib-jdk8-1.7.10.jar kotlin-stdlib-1.7.10.jar kotlin
+ -stdlib-common-1.7.10.jar annotations-13.0.jar kotlin-stdlib-jdk7-1.7.1
+ 0.jar gson-2.9.1.jar okhttp-4.10.0.jar okio-jvm-3.0.0.jar gson-2.9.1-ja
+ vadoc.jar okhttp-4.10.0-javadoc.jar okio-jvm-3.0.0-javadoc.jar mysql-co
+ nnector-java-8.0.30.jar gson-2.9.1.jar mysql-connector-java-8.0.30.jar
+

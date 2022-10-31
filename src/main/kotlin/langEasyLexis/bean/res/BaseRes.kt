@@ -1,5 +1,6 @@
 package langEasyLexis.bean.res
 
+import langEasyLexis.SocializeConstants
 import langEasyLexis.api.Crypto
 
 open class BaseRes {
@@ -9,6 +10,12 @@ open class BaseRes {
     lateinit var data_body: String
     var data_encrypted: Int = 0
     var error_body: error_body? = null
+    fun iSuccess(): Boolean {
+        /**
+         * result_code==20 即成功
+         */
+        return result_code == SocializeConstants.ResultCodeSucc
+    }
 }
 
 data class v3_security(

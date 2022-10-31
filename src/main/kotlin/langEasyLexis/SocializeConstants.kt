@@ -18,4 +18,6 @@ object SocializeConstants {
     const val V3SecretKey = "v3secret220815b14bce52a606b2d488"
 
     const val ResultCodeSucc = 200
+
+
 }

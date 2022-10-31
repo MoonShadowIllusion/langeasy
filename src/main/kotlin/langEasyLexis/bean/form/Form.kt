@@ -44,19 +44,17 @@ open class Form(val type: String) {
         return Pair(builder, hashMap)
     }
 
-    open fun getFrom(key: String, iv: String): FormBody {
+    open fun getFrom(key: String): FormBody {
         return this.getFormBodyBuilder()
-            .appSign(key, iv)
+            .appSign(key, SocializeConstants.CoolApiIV)
             .build()
     }
 
-    fun getParams(key: String, iv: String): String {
-        val body = this.getFormBodyBuilder()
-            .appSign(key, iv)
-            .build()
+    fun getParams(key: String): String {
+        val body = getFrom(key)
         val sb = StringBuilder("?")
         body.run {
-            for (i in 0 until  body.size) {
+            for (i in 0 until body.size) {
                 sb.append(this.name(i), "=", this.encodedValue(i), "&")
             }
         }

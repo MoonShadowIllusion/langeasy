@@ -22,7 +22,6 @@ object Requests {
         val builder = OkHttpClient.Builder()
             .readTimeout(120L, TimeUnit.SECONDS)
             .connectTimeout(5L, TimeUnit.SECONDS)
-            .proxy(TestConfig.proxy)
 
         /* bbdc
         val cer = this::class.java.getResourceAsStream("bbdc.cer")
